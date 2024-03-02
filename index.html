@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  <!-- 
+    div {
+    width: 400px;
+    margin: auto;
+    /*background-color: #d6a3ff;*/
+    background: #007E3E; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 10px; /* Поля вокруг текста */
+    border-radius: 5%; /* Уголки */
+  } 
+-->
+  .body1{background-color: rgba(236, 240, 233, 0.979) }
+  .div-white {background-color: white; height: 600px; width: 900; border-radius: 4%;}
+  .h1{color: #000; font-family: Arial; text-align: center;}
+  .p{color: #000; font-family: Arial; text-align: center;}
+  table {margin: auto;}
+    .qr { border-spacing: 0; border-collapse: collapse; }
+    .qr th { padding: .5em; }
+    .qr td { border: 1px solid blue; width: 8px; height: 8px; vertical-align: middle; }
+    .qr .white { background: white; }
+    .qr .black { background: blue; }
+
+    .attribution { font-size: 11px; text-align: center; width: 90%;}
+    .attribution a { color: hsl(228, 45%, 44%); border-radius: 5%; }
+  </style>
+</head>
+<body class="body1">
+  <p> 11 </p>
+  <div class="div-white">
+    <p>  </p>
+    <div style="background-color:blue; height: 355px; width: 90%; border-radius: 4%;">
+      <p>  </p> <p>  </p>
+    <table class="qr">
+    <tbody>
+    <tr> <!-- line 1 -->
+      <td class="white"></td> <!-- 1 -->
+      <td class="white"></td> <!-- 2 -->
+      <td class="white"></td> <!-- 3 -->
+      <td class="white"></td> <!-- 4 -->
+      <td class="white"></td> <!-- 5 -->
+      <td class="white"></td> <!-- 6 -->
+      <td class="white"></td> <!-- 7 -->
+      <td></td>
+      <td class="black"></td>
+      <td class="black"></td>
+      <td class="white"></td>
+      <td class="black"></td>
+      <td class="black"></td>
+      <td class="black"></td>
+      <td class="black"></td>
+      <td class="white"></td>
+      <td class="white"></td>
+      <td class="black"></td>
+      <td class="white"></td>
+      <td class="black"></td>
+      <td class="black"></td>
+      <td class="black"></td>
+      <td class="white"></td> <!-- 1 -->
+      <td class="white"></td> <!-- 2 -->
+      <td class="white"></td> <!-- 3 -->
+      <td class="white"></td> <!-- 4 -->
+      <td class="white"></td> <!-- 5 -->
+      <td class="white"></td> <!-- 6 -->
+      <td class="white"></td> <!-- 7 -->
+    </tr> <!-- end of line 1 -->
+
+    <tr>   <!-- line 2 -->
+      <td class="white"></td> <!-- 1 -->
+      <td class="black"></td>
+      <td class="black"></td> <!-- 3 -->
+      <td class="black"></td> <!-- 4 -->
+      <td class="black"></td> <!-- 5 -->
+      <td class="black"></td>
+      <td class="white"></td> <!-- 7 -->
+      <td class="black"></td>
+      <td class="white"></td>
+      <td class="white"></td>
+      <td class="black"></td>
+      <td class="white"></td>
+      <td class="white"></td>
+      <td class="white"></td>
+      <td class="white"></td>
+      <td class="black"></td>
+      <td class="white"></td>
+      <td class="white"></td>
+      <td class="black"></td>
+      <td class="black"></td>
+      <td class="white"></td>
+      <td class="black"></td>
+      <td class="white"></td> <!-- 1 -->
+      <td class="black"></td>
+      <td class="black"></td> <!-- 3 -->
+      <td class="black"></td> <!-- 4 -->
+      <td class="black"></td> <!-- 5 -->
+      <td class="black"></td>
+      <td class="white"></td> <!-- 7 -->
+    </tr> <!-- end of line 2 -->
+
+    <tr>   <!-- line 3 -->
+      <td class="white"></td> <!-- 1 -->
+      <td class="black"></td>
+      <td class="white"></td> <!-- 3 -->
+      <td class="white"></td> <!-- 4 -->
+      <td class="white"></td> <!-- 5 -->
+      <td class="black"></td>
+      <td class="white"></td> <!-- 7 -->
+      <td class="black"></td>
+      <td class="white"></td>
+      <td class="white"></td>
+      <td class="white"></td>
+      <td class="black"></td>
+      <td class="white"></td>
+      <td class="white"></td>
+      <td class="black"></td>
+      <td class="white"></td>
+      <td class="black"></td>
+      <td class="black"></td>
+      <td class="white"></td>
+      <td class="black"></td>
+      <td class="white"></td>
+      <td class="black"></td>
+      <td class="white"></td> <!-- 1 -->
+      <td class="black"></td>
+      <td class="white"></td> <!-- 3 -->
+      <td class="white"></td> <!-- 4 -->
+      <td class="white"></td> <!-- 5 -->
+      <td class="black"></td>
+      <td class="white"></td> <!-- 7 -->
+    </tr> <!-- end of line 3 -->
+
+    
+    <tr>   <!-- line 4 -->
+      <td class="white"></td> <!-- 1 -->
+      <td class="black"></td>
+      <td class="white"></td> <!-- 3 -->
+      <td class="white"></td> <!-- 4 -->
+      <td class="white"></td> <!-- 5 -->
+      <td class="black"></td>
+      <td class="white"></td> <!-- 7 -->
+      <td class="black"></td>
+      <td class="white"></td>
+      <td class="white"></td>
+      <td class="black"></td>
+      <td class="white"></td>
+      <td class="black"></td>
+      <td class="black"></td>
+      <td class="black"></td>
+      <td class="black"></td>
+      <td class="white"></td>
+      <td class="white"></td>
+      <td class="black"></td>
+      <td class="black"></td>
+      <td class="white"></td>
+      <td class="black"></td>
+      <td class="white"></td> <!-- 1 -->
+      <td class="black"></td>
+      <td class="white"></td> <!-- 3 -->
+      <td class="white"></td> <!-- 4 -->
+      <td class="white"></td> <!-- 5 -->
+      <td class="black"></td>
+      <td class="white"></td> <!-- 7 -->
+    </tr> <!-- end of line 4 -->
+
+        
+    <tr>   <!-- line 5 -->
+      <td class="white"></td> <!-- 1 -->
+      <td class="black"></td>
+      <td class="white"></td> <!-- 3 -->
+      <td class="white"></td> <!-- 4 -->
+      <td class="white"></td> <!-- 5 -->
+      <td class="black"></td>
+      <td class="white"></td> <!-- 7 -->
+      <td class="black"></td>
+      <td class="black"></td>
+      <td class="white"></td> <!-- 10 -->
+      <td class="black"></td> 
+      <td class="black"></td>
+      <td class="black"></td>
+      <td class="black"></td>
+      <td class="black"></td>
+      <td class="white"></td>
+      <td class="white"></td>
+      <td class="black"></td>
+      <td class="black"></td>
+      <td class="white"></td>
+      <td class="white"></td>
+      <td class="black"></td>
+      <td class="white"></td> <!-- 1 -->
+      <td class="black"></td>
+      <td class="white"></td> <!-- 3 -->
+      <td class="white"></td> <!-- 4 -->
+      <td class="white"></td> <!-- 5 -->
+      <td class="black"></td>
+      <td class="white"></td> <!-- 7 -->
+    </tr> <!-- end of line 5 -->
+
+    <tr>   <!-- line 6 -->
+      <td class="white"></td> <!-- 1 -->
+      <td class="black"></td>
+      <td class="black"></td> <!-- 3 -->
+      <td class="black"></td> <!-- 4 -->
+      <td class="black"></td> <!-- 5 -->
+      <td class="black"></td>
+      <td class="white"></td> <!-- 7 -->
+      <td class="black"></td>
+      <td class="black"></td> <!-- 9 -->
+      <td class="white"></td>
+      <td class="black"></td> <!--11 -->
+      <td class="black"></td> <!--12 -->
+      <td class="white"></td>
+      <td class="black"></td> <!--14 -->
+      <td class="black"></td> <!--15 -->
+      <td class="white"></td>
+      <td class="black"></td> <!--17 -->
+      <td class="black"></td>
+      <td class="black"></td>
+      <td class="black"></td>
+      <td class="white"></td>
+      <td class="black"></td>
+      <td class="white"></td> <!-- 1 -->
+      <td class="black"></td>
+      <td class="black"></td> <!-- 3 -->
+      <td class="black"></td> <!-- 4 -->
+      <td class="black"></td> <!-- 5 -->
+      <td class="black"></td>
+      <td class="white"></td> <!-- 7 -->
+    </tr> <!-- end of line 6 -->
+
+    <tr> <!-- line 7 -->
+      <td class="white"></td> <!-- 1 -->
+      <td class="white"></td> <!-- 2 -->
+      <td class="white"></td> <!-- 3 -->
+      <td class="white"></td> <!-- 4 -->
+      <td class="white"></td> <!-- 5 -->
+      <td class="white"></td> <!-- 6 -->
+      <td class="white"></td> <!-- 7 -->
+      <td></td> <td class="white"></td>
+      <td></td> <td class="white"></td>
+      <td></td> <td class="white"></td>
+      <td></td> <td class="white"></td>
+      <td></td> <td class="white"></td>
+      <td></td> <td class="white"></td>
+      <td></td> <td class="white"></td>
+      <td></td>
+      <td class="white"></td> <!-- 1 -->
+      <td class="white"></td> <!-- 2 -->
+      <td class="white"></td> <!-- 3 -->
+      <td class="white"></td> <!-- 4 -->
+      <td class="white"></td> <!-- 5 -->
+      <td class="white"></td> <!-- 6 -->
+      <td class="white"></td> <!-- 7 -->
+    </tr> <!-- end of line 7 -->
+
+    <tr> <!-- line 8 -->
+      <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+      <td class="white"></td> <!-- 9 -->
+      <td></td> <td></td>
+      <td class="white"></td> <!-- 12 -->
+      <td></td> <td></td>
+      <td class="white"></td> <!-- 15 -->
+      <td class="white"></td> <!-- 16 -->
+      <td class="white"></td> <!-- 17 -->
+      <td></td>
+      <td class="white"></td> <!-- 19 -->
+      <td></td>
+      <td class="white"></td> <!-- 21 -->
+    </tr> <!-- end of line 8 -->
+
+    <tr> <!-- line 9 -->
+      <td class="white"></td> <!-- 1 -->
+      <td></td> <td></td> <td></td> <td></td> <td></td>
+      <td class="white"></td> <!-- 7 -->
+      <td></td>
+      <td class="white"></td> <!-- 9 -->
+      <td></td>
+      <td class="white"></td> <!-- 11 -->
+      <td></td> <td></td> <td></td> <td></td> <td></td>
+      <td class="white"></td> <!-- 17 -->
+      <td class="white"></td> <!-- 18 -->
+      <td></td>
+      <td class="white"></td> <!-- 20 -->
+      <td></td>
+      <td class="white"></td> <!-- 22 -->
+      <td class="white"></td> <!-- 23 -->
+      <td></td> <td></td>
+      <td class="white"></td> <!-- 26 -->
+      <td class="white"></td> <!-- 27 -->
+      <td class="white"></td> <!-- 28 -->
+    </tr> <!-- end of line 9 -->
+
+    <tr> <!-- line 10 -->
+      <td class="white"></td> <!-- 1 -->
+      <td></td> 
+      <td class="white"></td> <!-- 3 -->
+      <td></td> <td></td>
+      <td class="white"></td> <!-- 6 -->
+      <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>  <td></td>
+      <td class="white"></td> <!-- 14 -->
+      <td></td> <td></td>
+      <td class="white"></td> <!-- 17 -->
+      <td class="white"></td> <!-- 18 -->
+      <td class="white"></td> <!-- 19 -->
+      <td class="white"></td> <!-- 20 -->
+      <td></td> <td></td> <td></td>
+      <td class="white"></td> <!-- 24 -->
+      <td class="white"></td> <!-- 25 -->
+      <td></td>
+      <td class="white"></td> <!-- 27 -->
+      <td class="white"></td> <!-- 28 -->
+    </tr> <!-- end of line 10 -->
+
+    <tr> <!-- line 11 -->
+      <td></td> 
+      <td class="white"></td> <!-- 2 -->
+      <td class="white"></td> <!-- 3 -->
+      <td class="white"></td> <!-- 4 -->
+      <td class="white"></td> <!-- 5 -->
+      <td></td>
+      <td class="white"></td> <!-- 7 -->
+      <td class="white"></td> <!-- 8 -->
+      <td class="white"></td> <!-- 9 -->
+      <td class="white"></td> <!-- 10 -->
+      <td></td> <td></td>
+      <td class="white"></td> <!-- 13 -->
+      <td class="white"></td> <!-- 14 -->
+      <td class="white"></td> <!-- 15 -->
+      <td class="white"></td> <!-- 16 -->
+      <td class="white"></td> <!-- 17 -->
+      <td class="white"></td> <!-- 18 -->
+    </tr> <!-- end of line 11 -->
+
+    <tr> <!-- row 12 -->
+      <td class="white"></td> <!-- col 1 -->
+      <td></td>
+      <td class="white"></td> <!-- col 3 -->
+      <td></td> <td></td>
+      <td class="white"></td> <!-- col 6 -->
+      <td></td>
+      <td class="white"></td> <!-- col 8 -->
+      <td class="white"></td> <!-- 9 -->
+      <td class="white"></td> <!-- 10 -->
+      <td class="white"></td> <!-- 11 -->
+      <td></td>
+      <td class="white"></td> <!-- 13 -->
+      <td class="white"></td> <!-- 14 -->
+      <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> 
+      <td class="white"></td> <!-- 21 -->
+      <td></td>
+      <td class="white"></td> <!-- 23 -->
+      <td class="white"></td> <!-- 24 -->
+      <td></td>
+      <td class="white"></td> <!-- 26 -->
+    </tr> <!-- end of row 12 -->
+
+    <tr> <!-- row 13 -->
+      <td></td>
+      <td class="white"></td> <!-- col 2 -->
+      <td></td> <td></td> <td></td>
+      <td class="white"></td> <!-- col 6 -->
+      <td class="white"></td> <!-- col 7 -->
+      <td></td>
+      <td class="white"></td> <!-- col 9 -->
+      <td></td>
+      <td class="white"></td> <!-- 11 -->
+      <td></td> <td></td>
+      <td class="white"></td> <!-- 14 -->
+      <td></td>
+      <td class="white"></td> <!-- 16 -->
+      <td class="white"></td> <!-- 17 -->
+      <td></td> <td></td>
+      <td class="white"></td> <!-- 20 -->
+      <td class="white"></td> <!-- 21 -->
+      <td></td>
+      <td class="white"></td> <!-- 23 -->
+      <td class="white"></td> <!-- 24 -->
+      <td></td> <td></td> <td></td> <td></td>
+      <td class="white"></td> <!-- 29 -->
+    </tr> <!-- end of row 13 -->
+
+    <tr> <!-- row 14 -->
+      <td></td> <td></td>
+      <td class="white"></td> <!-- col 3 -->
+      <td></td>
+      <td class="white"></td> <!-- col 5 -->
+      <td></td> <td></td>
+      <td class="white"></td> <!-- col 8 -->
+      <td></td>
+      <td class="white"></td> <!-- col 10 -->
+      <td class="white"></td> <!-- col 11 -->
+      <td></td> <td></td> <td></td> <td></td> <td></td>
+     <td class="white"></td> <!-- 17 -->
+      <td></td> <td></td>
+      <td class="white"></td> <!-- 20 -->
+      <td class="white"></td> <!-- 21 -->
+      <td class="white"></td> <!-- 22 -->
+      <td class="white"></td> <!-- 23 -->
+      <td></td>
+      <td class="white"></td> <!-- 25 -->
+      <td></td> <td></td>
+      <td class="white"></td> <!-- 28 -->
+      <td class="white"></td> <!-- 29 -->
+    </tr> <!-- end of row 14 -->
+
+    <tr> <!-- row 15 -->
+      <td class="white"></td> <!-- col 1 -->
+      <td class="white"></td> <!-- col 2 -->
+      <td></td>
+      <td class="white"></td> <!-- col 5 -->
+      <td></td> <td></td>
+      <td class="white"></td> <!-- col 8 -->
+      <td></td>
+      <td class="white"></td> <!-- col 10 -->
+      <td class="white"></td> <!-- col 11 -->
+      <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+     <td class="white"></td> <!-- 18 -->
+     <td class="white"></td> <!-- 19 -->
+      <td></td> <td></td>
+      <td class="white"></td> <!-- 22 -->
+      <td></td>
+      <td class="white"></td> <!-- 24 -->
+      <td></td>
+      <td class="white"></td> <!-- 26 -->
+      <td class="white"></td> <!-- 27 -->
+    </tr> <!-- end of row 15 -->
+
+    <tr> <!-- row 16 -->
+      <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+      <td class="white"></td> <!-- col 9 -->
+      <td class="white"></td> <!-- col 10 -->
+      <td class="white"></td> <!-- col 11 -->
+      <td></td> <td></td> <td></td> <td></td>
+      <td class="white"></td> <!-- col 16 -->
+      <td></td> <td></td>
+      <td class="white"></td> <!-- 19 -->
+      <td class="white"></td> <!-- 20 -->
+      <td></td> <td></td> <td></td>
+      <td class="white"></td> <!-- 24 -->
+      <td class="white"></td> <!-- 25 -->
+      <td></td>
+      <td class="white"></td> <!-- 27 -->
+      <td></td>
+      <td class="white"></td> <!-- 29 -->
+    </tr> <!-- end of row 16 -->
+
+    <tr> <!-- row 17 -->
+      <td class="white"></td> <!-- col 1 -->
+      <td></td> <td></td> <td></td>
+      <td class="white"></td> <!-- col 5 -->
+      <td class="white"></td> <!-- col 6 -->
+      <td class="white"></td> <!-- col 7 -->
+      <td></td> <td></td> <td></td> <td></td>
+      <td class="white"></td> <!-- col 12 -->
+      <td></td> <td></td> <td></td> <td></td>
+      <td class="white"></td> <!-- 17 -->
+      <td class="white"></td> <!-- 18 -->
+      <td class="white"></td> <!-- 19 -->
+      <td class="white"></td> <!-- 20 -->
+      <td></td> <td></td> <td></td>
+      <td class="white"></td> <!-- 24 -->
+      <td></td>
+      <td class="white"></td> <!-- 26 -->
+      <td class="white"></td> <!-- 27 -->
+    </tr> <!-- end of row 17 -->
+
+    <tr> <!-- row 18 -->
+      <td class="white"></td> <!-- col 1 -->
+      <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+      <td class="white"></td> <!-- col 8 -->
+      <td class="white"></td> <!-- col 9 -->
+      <td class="white"></td> <!-- col 10 -->
+      <td></td>
+      <td class="white"></td> <!-- col 12 -->
+      <td></td>
+      <td class="white"></td> <!-- 14 -->
+      <td class="white"></td> <!-- 15 -->
+      <td></td> <td></td>
+      <td class="white"></td> <!-- 18 -->
+      <td class="white"></td> <!-- 19 -->
+      <td class="white"></td> <!-- 20 -->
+      <td class="white"></td> <!-- 21 -->
+      <td></td>
+      <td class="white"></td> <!-- 23 -->
+      <td class="white"></td> <!-- 24 -->
+      <td class="white"></td> <!-- 25 -->
+      <td></td>
+      <td class="white"></td> <!-- 26 -->
+      <td class="white"></td> <!-- 27 -->
+      <td class="white"></td> <!-- 28 -->
+    </tr> <!-- end of row 18 -->
+
+    <tr> <!-- row 19 -->
+      <td class="white"></td> <!-- col 1 -->
+      <td class="white"></td> <!-- col 2 -->
+      <td></td>
+      <td class="white"></td> <!-- col 4 -->
+      <td class="white"></td> <!-- col 5 -->
+      <td class="white"></td> <!-- col 6 -->
+      <td class="white"></td> <!-- col 7 -->
+      <td></td>
+      <td class="white"></td> <!-- col 9 -->
+      <td class="white"></td> <!-- col 10 -->
+      <td></td>
+      <td class="white"></td> <!-- 12 -->
+      <td></td> <td></td> <td></td>
+      <td class="white"></td> <!-- 16 -->
+      <td></td> <td></td> <td></td>
+      <td class="white"></td> <!-- 20 -->
+      <td></td> <td></td> <td></td> <td></td> <td></td>
+      <td class="white"></td> <!-- 26 -->
+      <td></td> <td></td>
+      <td class="white"></td> <!-- 29 -->
+    </tr> <!-- end of row 19 -->
+
+    <tr> <!-- row 20 -->
+      <td class="white"></td> <!-- col 1 -->
+      <td></td>
+      <td class="white"></td> <!-- col 3 -->
+      <td class="white"></td> <!-- col 4 -->
+      <td></td>
+      <td class="white"></td> <!-- col 6 -->
+      <td></td> <td></td> <td></td>
+      <td class="white"></td> <!-- col 10 -->
+      <td class="white"></td> <!-- col 11 -->
+      <td></td>
+      <td class="white"></td> <!-- 13 -->
+      <td class="white"></td> <!-- 14 -->
+      <td></td> <td></td> <td></td> <td></td>
+      <td class="white"></td> <!-- 19 -->
+      <td></td>
+      <td class="white"></td> <!-- 21 -->
+      <td class="white"></td> <!-- 22 -->
+      <td class="white"></td> <!-- 23 -->
+      <td class="white"></td> <!-- 24 -->
+      <td class="white"></td> <!-- 25 -->
+   </tr> <!-- end of row 20 -->
+
+   <tr> <!-- row 21 -->
+    <td class="white"></td> <!-- col 1 -->
+    <td></td> <td></td> <td></td>
+    <td class="white"></td> <!-- col 5 -->
+    <td></td>
+    <td class="white"></td> <!-- col 7 -->
+    <td class="white"></td> <!-- col 8 -->
+    <td></td>
+    <td class="white"></td> <!-- col 10 -->
+    <td></td>
+    <td class="white"></td> <!-- 12 -->
+    <td></td> <td></td>
+    <td class="white"></td> <!-- 15 -->
+    <td class="white"></td> <!-- 16 -->
+    <td></td>
+    <td class="white"></td> <!-- 18 -->
+    <td></td> <td></td>
+    <td class="white"></td> <!-- 21 -->
+    <td class="white"></td> <!-- 22 -->
+    <td class="white"></td> <!-- 23 -->
+    <td class="white"></td> <!-- 24 -->
+    <td class="white"></td> <!-- 25 -->
+    <td></td>
+    <td class="white"></td> <!-- 27 -->
+    <td class="white"></td> <!-- 28 -->
+    <td class="white"></td> <!-- 29 -->
+ </tr> <!-- end of row 21 -->
+
+ <tr> <!-- row 22 -->
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td class="white"></td> <!-- col 9 -->
+  <td class="white"></td> <!-- col 10 -->
+  <td class="white"></td> <!-- col 11 -->
+  <td></td> <td></td> <td></td>
+  <td class="white"></td> <!-- 15 -->
+  <td></td> <td></td>
+  <td class="white"></td> <!-- 18 -->
+  <td class="white"></td> <!-- 19 -->
+  <td></td>
+  <td class="white"></td> <!-- 21 -->
+  <td></td> <td></td> <td></td>
+  <td class="white"></td> <!-- 25 -->
+  <td class="white"></td> <!-- 26 -->
+</tr> <!-- end of row 22 -->
+
+<tr> <!-- row 23 -->
+  <td class="white"></td> <!-- col 1 -->
+  <td class="white"></td> <!-- col 2 -->
+  <td class="white"></td> <!-- col 3 -->
+  <td class="white"></td> <!-- col 4 -->
+  <td class="white"></td> <!-- col 5 -->
+  <td class="white"></td> <!-- col 6 -->
+  <td class="white"></td> <!-- col 7 -->
+  <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td class="white"></td> <!-- col 13 -->
+  <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td class="white"></td> <!-- 19 -->
+  <td class="white"></td> <!-- 20 -->
+  <td class="white"></td> <!-- 21 -->
+  <td></td>
+  <td class="white"></td> <!-- 23 -->
+  <td></td>
+  <td class="white"></td> <!-- 25 -->
+  <td class="white"></td> <!-- 26 -->
+  <td class="white"></td> <!-- 27 -->
+</tr> <!-- end of row 23 -->
+
+<tr> <!-- row 24 -->
+  <td class="white"></td> <!-- col 1 -->
+  <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td class="white"></td> <!-- col 7 -->
+  <td></td> <td></td> <td></td>
+  <td class="white"></td> <!-- col 11 -->
+  <td class="white"></td> <!-- col 12 -->
+  <td></td> <td></td>
+  <td class="white"></td> <!-- 15 -->
+  <td class="white"></td> <!-- 16 -->
+  <td class="white"></td> <!-- 17 -->
+  <td></td> <td></td>
+  <td class="white"></td> <!-- 20 -->
+  <td class="white"></td> <!-- 21 -->
+  <td></td> <td></td> <td></td>
+  <td class="white"></td> <!-- 25 -->
+  <td></td> <td></td> <td></td>
+  <td class="white"></td> <!-- 29 -->
+</tr> <!-- end of row 24 -->
+
+<tr> <!-- row 25 -->
+  <td class="white"></td> <!-- col 1 -->
+  <td></td>
+  <td class="white"></td> <!-- col 3 -->
+  <td class="white"></td> <!-- col 4 -->
+  <td class="white"></td> <!-- col 5 -->
+  <td></td>
+  <td class="white"></td> <!-- col 7 -->
+  <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td class="white"></td> <!-- col 13 -->
+  <td class="white"></td> <!-- col 14 -->
+  <td class="white"></td> <!-- col 15 -->
+  <td></td>
+  <td class="white"></td> <!-- 17 -->
+  <td></td> <td></td>
+  <td class="white"></td> <!-- 20 -->
+  <td class="white"></td> <!-- 21 -->
+  <td class="white"></td> <!-- 22 -->
+  <td class="white"></td> <!-- 23 -->
+  <td class="white"></td> <!-- 24 -->  
+  <td class="white"></td> <!-- 25 -->
+  <td class="white"></td> <!-- 26 -->
+</tr> <!-- end of row 25 -->
+
+<tr> <!-- row 26 -->
+  <td class="white"></td> <!-- col 1 -->
+  <td></td>
+  <td class="white"></td> <!-- col 3 -->
+  <td class="white"></td> <!-- col 4 -->
+  <td class="white"></td> <!-- col 5 -->
+  <td></td>
+  <td class="white"></td> <!-- col 7 -->
+  <td></td> <td></td>
+  <td class="white"></td> <!-- col 10 -->
+  <td class="white"></td> <!-- col 11 -->
+  <td class="white"></td> <!-- col 12 -->
+  <td></td>
+  <td class="white"></td> <!-- 14 -->
+  <td class="white"></td> <!-- 15 -->
+  <td></td> <td></td>
+  <td class="white"></td> <!-- 18 -->
+  <td class="white"></td> <!-- 19 -->
+  <td></td> <td></td>
+  <td class="white"></td> <!-- 22 -->
+  <td></td>
+  <td class="white"></td> <!-- 24 -->
+  <td></td>
+  <td class="white"></td> <!-- 26 -->  
+  <td class="white"></td> <!-- 27 -->
+  <td class="white"></td> <!-- 28 -->
+</tr> <!-- end of row 26 -->
+
+<tr> <!-- row 27 -->
+  <td class="white"></td> <!-- col 1 -->
+  <td></td>
+  <td class="white"></td> <!-- col 3 -->
+  <td class="white"></td> <!-- col 4 -->
+  <td class="white"></td> <!-- col 5 -->
+  <td></td>
+  <td class="white"></td> <!-- col 7 -->
+  <td></td> <td></td>
+  <td class="white"></td> <!-- col 10 -->
+  <td class="white"></td> <!-- col 11 -->
+  <td></td> <td></td> <td></td> <td></td>
+  <td class="white"></td> <!-- 16 -->
+  <td class="white"></td> <!-- 17 -->
+  <td class="white"></td> <!-- 18 -->
+  <td></td>
+  <td class="white"></td> <!-- 20 -->
+  <td></td>
+  <td class="white"></td> <!-- 22 -->
+  <td class="white"></td> <!-- 23 -->
+  <td class="white"></td> <!-- 24 -->
+  <td class="white"></td> <!-- 25 -->  
+  <td class="white"></td> <!-- 26 -->  
+  <td class="white"></td> <!-- 27 -->
+  <td class="white"></td> <!-- 28 -->
+</tr> <!-- end of row 27 -->
+
+<tr> <!-- row 28 -->
+  <td class="white"></td> <!-- col 1 -->
+  <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td class="white"></td> <!-- col 7 -->
+  <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td class="white"></td> <!-- col 13 -->
+  <td></td> <td></td>
+  <td class="white"></td> <!-- col 16 -->
+  <td></td> <td></td> <td></td>
+  <td class="white"></td> <!-- col 20 -->
+  <td></td>
+  <td class="white"></td> <!-- col 22 -->
+  <td></td>
+  <td class="white"></td> <!-- col 24 -->
+  <td></td>
+  <td class="white"></td> <!-- 26 -->
+  <td class="white"></td> <!-- 27 -->
+  <td></td>
+  <td class="white"></td> <!-- 29 -->
+</tr> <!-- end of row 28 -->
+
+<tr> <!-- row 29 -->
+  <td class="white"></td> <!-- col 1 -->
+  <td class="white"></td> <!-- col 2 -->
+  <td class="white"></td> <!-- col 3 -->
+  <td class="white"></td> <!-- col 4 -->
+  <td class="white"></td> <!-- col 5 -->
+  <td class="white"></td> <!-- col 6 -->
+  <td class="white"></td> <!-- col 7 -->
+  <td></td>
+  <td class="white"></td> <!-- col 9 -->
+  <td class="white"></td> <!-- col 10 -->
+  <td></td>
+  <td class="white"></td> <!-- 12 -->
+  <td></td>
+  <td class="white"></td> <!-- 14 -->
+  <td class="white"></td> <!-- 15 -->
+  <td></td> <td></td>
+  <td class="white"></td> <!-- 18 -->
+  <td class="white"></td> <!-- 19 -->
+  <td class="white"></td> <!-- 20 -->
+  <td></td>
+  <td class="white"></td> <!-- 22 -->
+  <td class="white"></td> <!-- 23 -->
+  <td class="white"></td> <!-- 24 -->
+  <td class="white"></td> <!-- 25 -->
+  <td class="white"></td> <!-- 26 -->
+  <td class="white"></td> <!-- 27 -->
+</tr> <!-- end of row 29 -->
+</tbody>
+</table>
+</div>
+  <p> </p>
+  <p> </p>
+  
+  <h1 class="h1">Improve your front-end skills by building projects</h1>
+  
+  <p class="p">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Alex Semikolenov</a>.
+  </div> 
+</div>
+  
+</body>
+</html>
